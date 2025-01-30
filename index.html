@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" data-testid="dark-mode-toggle">🌙</button>
+
+    <div class="profile-card" data-testid="profileCard">
+        <div class="profile-header"></div>
+        
+        <!-- Profile Picture -->
+        <img src="profilepic.jpg" alt="Profile Picture" data-testid="profilePicture">
+        
+        <!-- Full Name -->
+        <h2 data-testid="fullName">Apatira Sulayman</h2>
+
+        <!-- Job Title -->
+        <p class="job-title" data-testid="jobTitle">Frontend Engineer & Islamic Scholar</p>
+        
+        <!-- Short Bio -->
+        <p class="short-bio" data-testid="shortBio">
+            Passionate frontend engineer with expertise in React.js, Vue.js, Angular.js, Next.js and modern web development.  
+            As an Islamic scholar, I focus on integrating technology with Islamic education to build innovative platforms. 
+        </p>
+
+        <!-- Current Location -->
+        <p data-testid="currentLocation"><ion-icon name="location-outline"></ion-icon> Lagos, Nigeria</p>
+
+        <!-- Email Address -->
+        <p data-testid="emailAddress"><ion-icon name="mail-outline"></ion-icon> apatirasulayman@gmail.com</p>
+
+        <!-- Current UTC Time -->
+        <div class="time-section">
+            <p>Current UTC Time:</p>
+            <p id="utc-time" data-testid="currentTimeUTC"></p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links" data-testid="socialLinks">
+            <a href="hhttps://github.com/s8globals" target="_blank" class="social-btn github">
+                <ion-icon name="logo-github"></ion-icon> GitHub
+            </a>
+            <a href="https://x.com/devs_spark" target="_blank" class="social-btn twitter">
+                <ion-icon name="logo-twitter"></ion-icon> Twitter
+            </a>
+            <a href="https://www.linkedin.com/in/sulayman-apatira-techpro8" target="_blank" class="social-btn linkedin">
+                <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+            </a>
+            <a href="https://www.instagram.com/sultechpro08/" target="_blank" class="social-btn instagram">
+                <ion-icon name="logo-instagram"></ion-icon> Instagram
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
